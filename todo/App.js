@@ -1,15 +1,19 @@
-
 import { View } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import SignInScreen from "./src/screens/SignInScreen"; 
+import SignInScreen from "./src/screens/SignInScreen";
 import { NavigationContainer } from "@react-navigation/native";
+import AuthStack from "./src/navagations/AuthStack";
+import ListScreen from "./src/screens/ListScreen";
 
 const App = () => {
   return (
-    // <View> 대신 <View style={{flex: 1}}> 화면전체 감싸기
-    <NavigationContainer style={{ flex: 1 }}> 
+    <NavigationContainer>
       <StatusBar style="dark" />
-      <SignInScreen /> 
+
+      <AuthStack />
+      {/*여기에 singinScreen이 잇음 */}
+      {/*주석은 아래 두기*/}
+      {/**쉬프트+알트+F는 자동들여쓰기 */}
     </NavigationContainer>
   );
 };

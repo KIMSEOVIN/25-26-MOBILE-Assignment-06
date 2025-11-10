@@ -1,21 +1,16 @@
-
 export const login = (email, password) => {
   return new Promise((resolve, reject) => {
-    
     setTimeout(() => {
-    
-      if (email === 'seovinkim832@gmail.com' && password === '1234') {
-       
+      if (email === "1234" && password === "1234") {
         resolve({
           success: true,
           userId: 1,
           email: email,
-          message: '환영합니다',
+          message: "환영합니다",
         });
       } else {
-       
-        reject(new Error('이메일 또는 비밀번호가 틀렸습니다.'));
+        reject(new Error("정답은 1234, 1234요"))
       }
-    }, 2000); 
+    }, 2000);
   });
 };
