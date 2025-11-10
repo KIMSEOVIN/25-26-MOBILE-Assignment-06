@@ -8,7 +8,7 @@ const ListScreen = () => {
 
   useEffect(() => {
     navigation.setOptions({
-      headerBackTitle: "뒤로",
+      headerBackTitle: "뒤로가기",
     });
   });
 
